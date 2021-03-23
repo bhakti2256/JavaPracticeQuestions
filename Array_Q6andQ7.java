@@ -19,19 +19,18 @@ public class Array_Q6andQ7 {
         }
 
         int max = array[0];
+          int min = array[0];
         for(int i = 0 ; i < n ; i++){
             if(array[i] > max){
                 max = array[i];
+                 if(array[i] < min){
+                min = array[i];
             }
         }
         System.out.print("Maximum number in the array: " + max);
 
-        int min = array[0];
-        for(int i = 0 ; i < n ; i++){
-            if(array[i] < min){
-                min = array[i];
-            }
-        }
+      
+        
         System.out.print("\nMinimum number in the array: " + min);
     }
 }
